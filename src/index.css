@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: Georgia, 'Palatino Linotype', 'Book Antiqua', serif;
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background-color: #f9ebc0;
+    color: #1f2421;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Smooth GPU-composited continuous live motions */
+@keyframes cloudDriftLeft {
+  0% {
+    transform: translate3d(0%, 0px, 0);
+  }
+  50% {
+    transform: translate3d(-4.5%, -3px, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0px, 0);
+  }
+}
+
+@keyframes cloudDriftMid {
+  0% {
+    transform: translate3d(0%, 0px, 0);
+  }
+  50% {
+    transform: translate3d(-6.5%, -3px, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0px, 0);
+  }
+}
+
+@keyframes cloudDriftRight {
+  0% {
+    transform: translate3d(0%, 0px, 0);
+  }
+  50% {
+    transform: translate3d(4.5%, 3px, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0px, 0);
+  }
+}
+
+@keyframes sunPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 12px rgba(252, 165, 3, 0.28));
+  }
+  50% {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 22px rgba(252, 165, 3, 0.48));
+  }
+}
+
+@keyframes palmBreeze {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-1.35deg);
+  }
+}
+
+@keyframes camelBreathe {
+  0%,
+  100% {
+    transform: translate3d(0, 0px, 0);
+  }
+  50% {
+    transform: translate3d(0, -1.5px, 0);
+  }
+}
+
+@keyframes riseTranslate {
+  from {
+    transform: translate3d(0, var(--start-y, 100%), 0);
+  }
+  to {
+    transform: translate3d(0, 0%, 0);
+  }
+}
+
+@keyframes riseOpacity {
+  from {
+    opacity: var(--start-opacity, 0);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.anim-cloud-left {
+  animation: cloudDriftLeft 18s ease-in-out infinite;
+  will-change: transform;
+}
+
+.anim-cloud-mid {
+  animation: cloudDriftMid 22s ease-in-out infinite;
+  will-change: transform;
+}
+
+.anim-cloud-right {
+  animation: cloudDriftRight 20s ease-in-out infinite;
+  will-change: transform;
+}
+
+.anim-sun-pulse {
+  animation: sunPulse 7s ease-in-out infinite;
+  will-change: transform, filter;
+}
+
+.anim-palm-breeze {
+  transform-origin: 65% 96%;
+  animation: palmBreeze 5.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+.anim-camel-breathe {
+  animation: camelBreathe 4.2s ease-in-out infinite;
+  will-change: transform;
+}
+
+.motion-paused * {
+  animation-play-state: paused !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-cloud-left,
+  .anim-cloud-mid,
+  .anim-cloud-right,
+  .anim-sun-pulse,
+  .anim-palm-breeze,
+  .anim-camel-breathe {
+    animation: none !important;
+  }
+}

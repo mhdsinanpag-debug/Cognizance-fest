@@ -1,0 +1,114 @@
+{
+  "canvasWidth": 773,
+  "canvasHeight": 1507,
+  "layers": {
+    "sky": {
+      "x": 0,
+      "y": 0,
+      "width": 773,
+      "height": 1021
+    },
+    "logo": {
+      "x": 39,
+      "y": 6,
+      "width": 267,
+      "height": 105
+    },
+    "menuBtn": {
+      "x": 640,
+      "y": 10,
+      "width": 125,
+      "height": 111
+    },
+    "sun": {
+      "x": 497,
+      "y": 50,
+      "width": 117,
+      "height": 107
+    },
+    "cloudLeft": {
+      "x": 0,
+      "y": 108,
+      "width": 223,
+      "height": 115
+    },
+    "cloudMid": {
+      "x": 352,
+      "y": 88,
+      "width": 321,
+      "height": 61
+    },
+    "cloudRight": {
+      "x": 497,
+      "y": 116,
+      "width": 276,
+      "height": 120
+    },
+    "dune-1": {
+      "x": 0,
+      "y": 752,
+      "width": 773,
+      "height": 755
+    },
+    "dune-2": {
+      "x": 0,
+      "y": 841,
+      "width": 773,
+      "height": 302
+    },
+    "dune-3": {
+      "x": 0,
+      "y": 981,
+      "width": 773,
+      "height": 526
+    },
+    "dune-4": {
+      "x": 0,
+      "y": 1023,
+      "width": 773,
+      "height": 484
+    },
+    "dune-5": {
+      "x": 0,
+      "y": 1154,
+      "width": 773,
+      "height": 353
+    },
+    "dune-6": {
+      "x": 0,
+      "y": 1240,
+      "width": 773,
+      "height": 267
+    },
+    "palm-tree": {
+      "x": 551,
+      "y": 701,
+      "width": 222,
+      "height": 335
+    },
+    "camel-caravan": {
+      "x": 426,
+      "y": 934,
+      "width": 328,
+      "height": 200
+    },
+    "cactus-1": {
+      "x": 31,
+      "y": 1084,
+      "width": 140,
+      "height": 148
+    },
+    "cactus-2": {
+      "x": 66,
+      "y": 1214,
+      "width": 139,
+      "height": 150
+    },
+    "dry-tree": {
+      "x": 494,
+      "y": 1099,
+      "width": 227,
+      "height": 183
+    }
+  }
+}
